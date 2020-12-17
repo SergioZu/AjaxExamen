@@ -230,6 +230,7 @@ function visualizarSelectAnimales(datosAnimal){
     let select=document.getElementById("selectAnimal");
 
     datosAnimal.forEach(animal=>{
-        select.innerHTML+=" <option value=''>"+animal.Nombre+"</option>"
+        select.innerHTML+=" <option value='"+animal.Nombre+"'>"+animal.Nombre+"</option>"
+        console.log(select.value);
     })
 }
